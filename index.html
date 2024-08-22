@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mag88</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- header__inner -->
+      <div class="header__inner">
+        <h1>
+          <img src="./img/logo.svg" class="header__logo" alt="Mag88" />
+        </h1>
+
+        <!-- global-nav -->
+        <nav class="global-nav">
+          <h2 class="global-nav__title">グローバルナビゲーション</h2>
+          <ul class="global-nav__list">
+            <li class="list__item"><a href="#about" class="global-nav__link">About</a></li>
+            <li class="list__item"><a href="#works" class="global-nav__link">Works</a></li>
+            <li class="list__item"><a href="#news" class="global-nav__link">News</a></li>
+            <li class="list__item"><a href="#contact" class="global-nav__link">Contact</a></li>
+            <li class="list__item">
+              <a href="https://www.instagram.com/"><img src="./img/icon-instagram.png" width="20" height="20" alt="Instagram" /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- main-visual -->
+      <div class="main-visual">
+        <picture class="main-visual__image">
+          <source srcset="/img/mainvisual-sp.jpg" media="(max-width: 600px)" type="image/jpeg" class="main-visual__image--sp" />
+          <img src="./img/mainvisual-pc.jpg" class="main-visual__image--pc" alt="" />
+        </picture>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <small class="footer__copyright">&copy; 2020 My Work</small>
+      </div>
+    </footer>
+  </body>
+</html>
