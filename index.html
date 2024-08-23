@@ -10,41 +10,53 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header">
-      <h1>
-        <img src="./img/logo.svg" class="main__logo" width="120" height="40" alt="Mag88" />
-      </h1>
-    </header>
+    <!-- <header class="header"></header> -->
 
     <!-- main -->
     <main>
       <!-- main-visual -->
       <div class="main-visual">
+        <h1 class="main__logo">
+          <img src="./img/logo.svg" width="120" height="40" alt="Mag88" />
+        </h1>
         <img src="./img/mainvisual.jpg" class="main-visual__image" alt="" />
       </div>
 
-      <!-- section -->
-      <section class="section">
+      <!-- special -->
+      <section class="special section">
         <div class="section__inner">
           <h2 class="section__title">A special, long article in a newspaper or magazine</h2>
           <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <section class="sub-section">
-            <div class="sub-section__inner">
-              <h3 class="sub-section__title">Archive</h3>
-              <p class="sub-section__desc">テキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </section>
-          <section class="sub-section">
-            <div class="sub-section__inner">
-              <h3 class="sub-section__title">New</h3>
-              <p class="sub-section__desc">テキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-          </section>
+
+          <div class="sub-section__wrapper">
+            <section class="special__sub-section sub-section archive">
+              <a href="#" class="sub-section__inner archive__inner">
+                <div class="sub-section__text">
+                  <h3 class="sub-section__title">Archive</h3>
+                  <p class="sub-section__desc">
+                    テキストテキストテキスト<br />
+                    テキストテキストテキストテキスト
+                  </p>
+                </div>
+              </a>
+            </section>
+            <section class="special__sub-section sub-section new">
+              <a href="#" class="sub-section__inner new__inner">
+                <div class="sub-section__text">
+                  <h3 class="sub-section__title">New</h3>
+                  <p class="sub-section__desc">
+                    テキストテキストテキスト<br />
+                    テキストテキストテキストテキスト
+                  </p>
+                </div>
+              </a>
+            </section>
+          </div>
         </div>
       </section>
 
-      <!-- section -->
-      <section>
+      <!-- fashion -->
+      <section class="fashion section">
         <div class="section__inner">
           <h2 class="section__title">Fashion &amp; Style</h2>
           <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
@@ -52,23 +64,28 @@
         </div>
       </section>
 
-      <!-- section -->
-      <section>
-        <div class="section__inner">
-          <h2 class="section__title">Catalog</h2>
-          <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      <!-- catalog -->
+      <section class="catalog section">
+        <div class="section__inner section--column section--column-reverse">
+          <div class="section__text">
+            <h2 class="section__title">Catalog</h2>
+            <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </div>
           <img src="./img/catalog.jpg" width="500" height="500" class="section__image" alt="カタログ" />
         </div>
       </section>
 
-      <section>
-        <div class="section__inner">
-          <h2 class="section__title">Antique</h2>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <a href="#" class="section__link">Read More</a>
+      <!-- antique -->
+      <section class="antique section">
+        <div class="section__inner section--column">
+          <div class="section__text">
+            <h2 class="section__title">Antique</h2>
+            <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <p class="section__desc">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <a href="#" class="section__link">Read More</a>
+          </div>
           <img src="./img/antique.jpg" width="500" height="500" class="section__image" alt="アンティーク" />
         </div>
       </section>
@@ -77,23 +94,25 @@
     <!-- footer -->
     <footer class="footer">
       <div class="footer__inner">
-        <a href="/"><img src="./img/logo.svg" width="120" height="40" alt="Mag88" class="footer__logo site__logo" /></a>
-
-        <section>
-          <h2 class="section__title">タイトル</h2>
-          <ul>
-            <li><a href="#">テキストテキストテキスト</a></li>
-            <li><a href="#">テキストテキストテキスト</a></li>
-            <li><a href="#">テキストテキストテキスト</a></li>
-            <li><a href="#">テキストテキストテキスト</a></li>
-            <li><a href="#">テキストテキストテキスト</a></li>
-          </ul>
-        </section>
-
-        <section>
-          <h2 class="section__title">タイトルタイトル</h2>
-          <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-        </section>
+        <div class="footer__inner--top">
+          <a href="/"><img src="./img/logo.svg" width="120" height="40" alt="Mag88" class="footer__logo site__logo" /></a>
+          <section>
+            <h2 class="section__title">タイトル</h2>
+            <nav class="footer__nav">
+              <ul class="nav__list">
+                <li class="list-item"><a href="#" class="nav__link">テキストテキストテキスト</a></li>
+                <li class="list-item"><a href="#" class="nav__link">テキストテキストテキスト</a></li>
+                <li class="list-item"><a href="#" class="nav__link">テキストテキストテキスト</a></li>
+                <li class="list-item"><a href="#" class="nav__link">テキストテキストテキスト</a></li>
+                <li class="list-item"><a href="#" class="nav__link">テキストテキストテキスト</a></li>
+              </ul>
+            </nav>
+          </section>
+          <section>
+            <h2 class="section__title">タイトルタイトル</h2>
+            <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          </section>
+        </div>
 
         <small class="footer__copyright">&copy; Mag88</small>
       </div>
