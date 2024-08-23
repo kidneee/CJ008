@@ -26,18 +26,46 @@ a {
 
 .section__inner {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
+  padding: 0 5%;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .section__title {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.17;
   text-align: center;
+}
+
+.special__title,
+.fashion__title {
+  margin-bottom: 20px;
+}
+
+.catalog__title,
+.antique__title {
+  margin-bottom: 40px;
 }
 
 .section__desc,
 .sub-section__desc {
   font-size: 0.875rem;
+  text-align: center;
+}
+
+.section__desc {
+  margin-bottom: 30px;
+}
+
+.catalog__desc,
+.antique__desc {
+  text-align: left;
 }
 
 .section__image {
@@ -45,8 +73,25 @@ a {
   max-height: 500px;
 }
 
+/* Read Moreボタン */
+.section__link {
+  font-size: 0.75rem;
+  width: 132px;
+  height: 42px;
+  border: 1px solid #2a2a2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gray-area {
+  background: #f5f5f5;
+  padding: 60px 0;
+}
+
 .section--column {
   display: flex;
+  gap: 2.5vw;
 }
 
 .section--column-reverse {
@@ -56,6 +101,7 @@ a {
 /* main-visual */
 .main-visual {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .main__logo {
@@ -72,13 +118,14 @@ a {
 
 /* special */
 .sub-section__wrapper {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 20px;
+  width: 100%;
 }
 
 .sub-section__inner {
-  width: 510px;
+  width: 100%;
   height: 510px;
   display: flex;
   justify-content: center;
@@ -103,19 +150,44 @@ a {
   text-align: center;
 }
 
+.special--top {
+  margin-bottom: 80px;
+}
+
 .archive__inner {
-  background-image: url(../img/magazine-archive.jpg);
-  background-position: center;
+  background-image: url(../img/magazine-archive.jpg) no-repeat center/contain;
 }
 
 .new__inner {
-  background-image: url(../img/magazine-new.jpg);
-  background-position: center;
+  background: url(../img/magazine-new.jpg) no-repeat center/contain;
+}
+
+/* .fashion */
+.fashion__inner {
+  width: 100vw;
+  height: 520px;
+  background: url(../img/fashion.jpg) no-repeat center/cover;
+  padding-top: 60px;
+  margin-bottom: 80px;
 }
 
 /* footer */
 .footer__inner--top {
   display: flex;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.125;
+}
+
+.footer__nav {
+  max-width: 120px;
+}
+
+.footer .list__item::before {
+  content: ' - ';
 }
 
 .footer__copyright {
