@@ -9,7 +9,7 @@
   font-size: 1.5rem; /* 24px */
   font-size: 1.75rem; /* 28px */
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 896px) {
 }
 
 /* 共通 */
@@ -28,6 +28,11 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 5%;
+}
+@media screen and (max-width: 896px) {
+  .section__inner {
+    width: 100%;
+  }
 }
 
 .section__text {
@@ -75,13 +80,28 @@ a {
   align-items: center;
   gap: 2.5vw;
 }
+@media screen and (max-width: 896px) {
+  .flex {
+    flex-direction: column;
+  }
+}
 
 .flex--reverse {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 896px) {
+  .flex--reverse {
+    flex-direction: column-reverse;
+  }
+}
 
 .flex__item {
   width: 50%;
+}
+@media screen and (max-width: 896px) {
+  .flex__item {
+    width: 100%;
+  }
 }
 
 /* Read Moreボタン */
@@ -123,6 +143,12 @@ a {
   justify-content: space-between;
   gap: 20px;
   width: 100%;
+}
+@media screen and (max-width: 896px) {
+  .sub-section__wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 .spacial__desc {
@@ -201,9 +227,20 @@ a {
 .catalog__inner {
   margin-bottom: 120px;
 }
+@media screen and (max-width: 896px) {
+  .catalog__inner {
+    margin-bottom: 60px;
+  }
+}
 
 .catalog__desc:last-of-type {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 896px) {
+  .catalog .section__image {
+    margin-bottom: 60px;
+  }
 }
 
 /* antique */
@@ -229,6 +266,11 @@ a {
   max-width: 1200px;
   padding: 100px 5%;
   margin: 0 auto;
+}
+@media screen and (max-width: 896px) {
+  .footer .top__inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer__logo {
