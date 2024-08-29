@@ -129,7 +129,7 @@ a {
 }
 
 .main-visual__image {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   object-fit: cover;
 }
@@ -198,7 +198,7 @@ a {
 
 /* fashion */
 .fashion__inner {
-  width: 100vw;
+  width: 100%;
   height: 520px;
   background: url(../img/fashion.jpg) no-repeat center/cover;
   padding-top: 60px;
